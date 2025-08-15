@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_unit_unit_hours",
+  "info": {
+    "displayName": "unit-hours"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "hours": {
+      "type": "integer"
+    }
+  }
+}

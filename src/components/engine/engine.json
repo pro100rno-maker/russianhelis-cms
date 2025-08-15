@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_engine_engines",
+  "info": {
+    "displayName": "engine"
+  },
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "hours": {
+      "type": "integer"
+    }
+  }
+}
