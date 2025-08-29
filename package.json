@@ -2,17 +2,20 @@
   "name": "russianhelis-cms",
   "private": true,
   "version": "0.1.0",
-  "engines": { "node": ">=18.x <=20.x", "npm": ">=8.x" },
+  "description": "Strapi CMS for russianhelis.com (Helicopters + i18n)",
+  "engines": {
+    "node": "20.x",
+    "npm": ">=8"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "^4.24.5",
     "@strapi/plugin-users-permissions": "^4.24.5",
     "@strapi/strapi": "^4.24.5",
     "sqlite3": "^5.1.7",
-
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
     "sharp": "^0.33.4"
   },
   "scripts": {
