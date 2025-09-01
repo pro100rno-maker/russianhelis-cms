@@ -1,20 +1,19 @@
 module.exports = [
   'strapi::errors',
+  'strapi::security',
   {
-    name: 'strapi::security',
+    name: 'strapi::cors',
     config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          'connect-src': ["'self'", 'https:', 'http:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https:', 'http:'],
-          'media-src': ["'self'", 'data:', 'blob:', 'https:', 'http:'],
-          'frame-src': ["'self'", 'https:', 'http:'],
-        },
-      },
+      enabled: true,
+      headers: '*',
+      origin: [
+        'https://russianhelis.com',
+        'https://www.russianhelis.com',
+        'https://russianhelis.vercel.app',
+        'http://localhost:3000' // для локальной разработки
+      ],
     },
   },
-  'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
