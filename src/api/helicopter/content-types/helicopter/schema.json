@@ -4,7 +4,8 @@
   "info": {
     "singularName": "helicopter",
     "pluralName": "helicopters",
-    "displayName": "Helicopter"
+    "displayName": "Helicopter",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,7 +26,7 @@
       }
     },
     "year": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "price": {
       "type": "decimal"
@@ -48,7 +49,8 @@
     },
     "photos": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false
     },
     "description": {
       "type": "richtext",
