@@ -16,7 +16,6 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "sharp": "^0.33.4",
-    "sqlite3": "^5.1.7",
     "styled-components": "^5.3.11"
   },
   "scripts": {
@@ -24,5 +23,4 @@
     "start": "bash -c 'mkdir -p public/uploads && strapi start'",
     "build": "strapi build"
   }
-  "engines": { "node": "20.x", "npm": ">=8" }
 }
