@@ -31,7 +31,6 @@
     "price": {
       "type": "decimal"
     },
-    "price": { "type": "decimal" },
     "currency": {
       "type": "enumeration",
       "enum": ["USD", "RUB"],
