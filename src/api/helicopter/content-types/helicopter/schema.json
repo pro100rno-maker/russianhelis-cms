@@ -31,6 +31,13 @@
     "price": {
       "type": "decimal"
     },
+
+    "currency": {
+  "type": "enumeration",
+  "enum": ["USD", "RUB"],
+  "default": "USD",
+  "required": false },
+  
     "location": {
       "type": "string"
     },
