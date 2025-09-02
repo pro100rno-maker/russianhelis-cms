@@ -19,53 +19,52 @@
     "name": {
       "type": "string",
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "year": {
-      "type": "biginteger"
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "price": {
       "type": "decimal"
     },
-
     "currency": {
-  "type": "enumeration",
-  "enum": ["USD", "RUB"],
-  "default": "USD",
-  "required": false },
-  
+      "type": "enumeration",
+      "enum": ["USD", "RUB"],
+      "default": "USD"
+    },
     "location": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "apu": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["for_sale", "sold"],
+      "default": "for_sale"
     },
     "engines": {
       "type": "component",
       "repeatable": true,
-      "component": "engine.engine"
-    },
-    "apu": {
-      "type": "string"
+      "component": "specs.engine"
     },
     "components": {
       "type": "component",
       "repeatable": true,
-      "component": "unit.unit-hours"
+      "component": "specs.component"
     },
     "photos": {
       "type": "media",
       "multiple": true,
-      "required": false
-    },
-    "description": {
-      "type": "richtext",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "allowedTypes": ["images"],
+      "pluginOptions": { "i18n": { "localized": false } }
     }
   }
 }
