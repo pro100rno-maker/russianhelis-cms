@@ -1,6 +1,2 @@
-export default {
-  routes: [
-    { method: 'GET', path: '/posts', handler: 'post.find' },
-    { method: 'GET', path: '/posts/:id', handler: 'post.findOne' }
-  ]
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::post.post');
