@@ -1,3 +1,3 @@
 'use strict';
-const { createCoreService } = require('@strapi/strapi').factories;
-module.exports = createCoreService('api::helicopter.helicopter');
+const { factories } = require('@strapi/strapi');
+module.exports = factories.createCoreService('api::helicopter.helicopter');

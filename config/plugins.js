@@ -1,6 +1,9 @@
-// config/plugins.js
 module.exports = () => ({
   i18n: {
-    enabled: false,
+    enabled: true,
+    config: {
+      locales: ['en', 'ru'],
+      defaultLocale: 'en',
+    },
   },
 });

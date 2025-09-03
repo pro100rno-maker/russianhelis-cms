@@ -21,7 +21,6 @@
   },
   "scripts": {
     "build": "strapi build",
-    "start": "bash -c 'rm -rf build .cache && mkdir -p public/uploads && strapi start'",
-    "develop": "strapi develop"
+    "start": "bash -c 'mkdir -p public/uploads && strapi start'"
   }
 }
