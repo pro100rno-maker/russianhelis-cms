@@ -1,9 +1,1 @@
-module.exports = ({ env }) => ({
-  i18n: {
-    enabled: true,
-    config: {
-      locales: ['ru', 'en'],
-      defaultLocale: 'ru',
-    },
-  },
-});
+module.exports = ({ env }) => ({ i18n: { enabled: true, config: { locales: ['en','ru'], defaultLocale: 'en' } } });
