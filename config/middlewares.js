@@ -1,19 +1,29 @@
 module.exports = [
   'strapi::errors',
-  'strapi::security',
+
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+       },
+    },
+  },
+
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
-      headers: '*',
       origin: [
-        'https://russianhelis.com',
-        'https://www.russianhelis.com',
-        'https://russianhelis.vercel.app',
-        'http://localhost:3000' // для локальной разработки
+        'http://localhost:3000',
+        'https://www.russianhelis.com',     
+        'https://russianhelis.vercel.app',  
       ],
+      methods: ['GET','POST','PUT','PATCH','DELETE','HEAD','OPTIONS'],
+      headers: '*',               // 
+      keepHeaderOnError: true,
     },
   },
+
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
