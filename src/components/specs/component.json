@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_specs_components",
+  "info": { "displayName": "component", "icon": "cog" },
+  "options": {},
+  "attributes": {
+    "name":   { "type": "string", "required": true },
+    "value":  { "type": "string" },
+    "notes":  { "type": "text" }
+  }
+}

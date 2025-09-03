@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_specs_engines",
+  "info": { "displayName": "engine", "icon": "cog" },
+  "options": {},
+  "attributes": {
+    "model":   { "type": "string" },
+    "hours":   { "type": "integer" },
+    "cycles":  { "type": "integer" },
+    "notes":   { "type": "text" }
+  }
+}
