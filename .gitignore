@@ -9,3 +9,12 @@ dist/
 public/uploads/*
 !public/uploads/.gitkeep
 .env*
+.DS_Store
+build/
+.cache/
+dist/
+.tmp/
+
+public/uploads/*
+!public/uploads/.gitkeep
+.env*
