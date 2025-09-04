@@ -20,7 +20,8 @@
     "styled-components": "^5.3.11"
   },
   "scripts": {
+    "develop": "strapi develop",
     "build": "strapi build",
-    "start": "bash -c 'mkdir -p public/uploads && strapi start'"
+    "start": "strapi start"
   }
 }

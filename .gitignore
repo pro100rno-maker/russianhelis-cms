@@ -19,3 +19,4 @@ public/uploads/*
 !public/uploads/.gitkeep
 .env*
 .DS_Store
+.DS_Store
